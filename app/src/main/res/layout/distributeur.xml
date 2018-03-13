@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="info.dicj.distributeur.MainActivity"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:weightSum="100"
+    android:background="@color/fantasy">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="50">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="info.dicj.distributeur.MainActivity">
+
+            <View style="@style/UQAC.barre"/>
+
+            <TextView
+                style="@style/UQAC.h1"
+                android:id="@+id/textView"
+                android:text="@string/titre_distri" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/image_dicj"
+                android:elevation="8dp"
+                android:src="@drawable/image_dicj" />
+
+            <View style="@style/UQAC.barre"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/UQAC.h2"
+                        android:text="@string/titre_sondage" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/nom"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/indice_nom"
+                        android:backgroundTint="@color/mystic"
+                        android:layout_marginTop="10dp"
+                        android:textSize="16sp"
+                        android:inputType="textCapWords"/>
+                </TableRow>
+
+                <RadioGroup
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/appreciation_cours">
+
+                    <RadioButton
+                        style="UQAC.RadioButton"
+                        android:id="@+id/reponse1"
+                        android:text="@string/reponse1" />
+                    <RadioButton
+                        style="UQAC.RadioButton"
+                        android:id="@+id/reponse2"
+                        android:text="@string/reponse2"/>
+
+                </RadioGroup>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/message_utilisateur"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <CheckBox
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/verification"
+                        android:text="@string/verification"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TableRow>
+
+                    <TextView
+                        style="@style/UQAC.h2"
+                        android:text="@string/titre_boissons" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        style="@style/UQAC.BoutonItem"
+                        android:id="@+id/bPepsi"
+                        android:onClick="ajouterBoisson"
+                        android:text="@string/pepsi"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        style="@style/UQAC.BoutonItem"
+                        android:id="@+id/bOrangeade"
+                        android:onClick="ajouterBoisson"
+                        android:text="@string/orangeade"
+                        tools:ignore="ButtonStyle" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        style="@style/UQAC.BoutonItem"
+                        android:id="@+id/bRacinette"
+                        android:onClick="ajouterBoisson"
+                        android:text="@string/racinette"
+                        tools:ignore="ButtonStyle" />
+
+                    <Button
+                        style="@style/UQAC.BoutonItem"
+                        android:id="@+id/bFraise"
+                        android:onClick="ajouterBoisson"
+                        android:text="@string/fraise"
+                        tools:ignore="ButtonStyle" />
+
+                </TableRow>
+
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/UQAC.h2"
+                    android:id="@+id/titre"
+                    android:text="@string/titre_saveurs" />
+
+                <Button
+                    android:id="@+id/sEpice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/mystic"
+                    android:layout_below="@+id/titre"
+                    android:layout_toEndOf="@+id/sBacon"
+                    android:onClick="ajouterSaveur"
+                    android:text="@string/epice" />
+
+                <Button
+                    android:id="@+id/sBacon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titre"
+                    android:backgroundTint="@color/mystic"
+                    android:layout_toEndOf="@+id/sGingembre"
+                    android:onClick="ajouterSaveur"
+                    android:text="@string/bacon" />
+
+                <Button
+                    android:id="@+id/sGingembre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titre"
+                    android:backgroundTint="@color/mystic"
+                    android:onClick="ajouterSaveur"
+                    android:text="@string/gingembre" />
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/UQAC.h2"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:text="@string/titre_operations"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="nouveau"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textColor="@android:color/white"
+                    android:text="@string/nouveau"
+                    tools:ignore="ButtonStyle" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="verser"
+                    android:backgroundTint="@color/bonbon"
+                    android:textColor="@android:color/white"
+                    android:text="@string/verser"
+                    tools:ignore="ButtonStyle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/verser_precedent"
+        android:backgroundTint="@color/mystic"
+        android:layout_weight="50"
+        android:text="@string/verser_prec"
+        android:onClick="reverser" />
+
+</LinearLayout>

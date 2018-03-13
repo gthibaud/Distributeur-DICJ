@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Distributeur</string>
+    <string name="image_dicj">Image écran accueil</string>
+    <string name="indice_nom">Votre nom</string>
+    <string name="titre_sondage">Le sondage.</string>
+    <string name="titre_distri">Super Distributeur DICJ.</string>
+    <string name="titre_boissons">Les boissons.</string>
+    <string name="titre_saveurs">Les saveurs.</string>
+    <string name="titre_operations">Les opérations.</string>
+    <string name="reponse1">J\'adore le cours</string>
+    <string name="reponse2">Je n\'adore pas le cours</string>
+    <string name="pepsi">Pepsi</string>
+    <string name="fraise">Fraise</string>
+    <string name="orangeade">Orangeade</string>
+    <string name="racinette">Racinette</string>
+    <string name="bacon">Bacon</string>
+    <string name="epice">Épice</string>
+    <string name="gingembre">Gingembre</string>
+    <string name="nouveau">Nouveau</string>
+    <string name="verser">Verser</string>
+    <string name="verser_prec">Verser (mélange précédent)</string>
+    <string name="verification">Désactiver l\'option \"Verser - mélange précédent\"</string>
+</resources>

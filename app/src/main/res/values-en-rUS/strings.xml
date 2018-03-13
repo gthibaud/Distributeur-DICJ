@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Distributor</string>
+    <string name="image_dicj">Home screen image</string>
+    <string name="indice_nom">Your name</string>
+    <string name="titre_sondage">The survey.</string>
+    <string name="titre_distri">Super Distributor DICJ.</string>
+    <string name="titre_boissons">Drinks.</string>
+    <string name="titre_saveurs">Flavors.</string>
+    <string name="titre_operations">Operations.</string>
+    <string name="reponse1">I love the class</string>
+    <string name="reponse2">I don\'t like the class</string>
+    <string name="pepsi">Pepsi</string>
+    <string name="fraise">Strawberry</string>
+    <string name="orangeade">Orangeade</string>
+    <string name="racinette">Root</string>
+    <string name="bacon">Bacon</string>
+    <string name="epice">Spice</string>
+    <string name="gingembre">Ginger</string>
+    <string name="nouveau">New</string>
+    <string name="verser">Pour</string>
+    <string name="verser_prec">Pour (previous mix)</string>
+    <string name="verification">Disable \"Pour - previous mix\" option</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#192743</color>
+    <color name="colorPrimaryDark">#192743</color>
+    <color name="colorAccent">#192743</color>
+    <color name="soft_peach">#EEE0DE</color>
+    <color name="fantasy">#FBF2ED</color>
+    <color name="mystic">#E2E4E3</color>
+    <color name="jaguar">#2B2B2B</color>
+    <color name="tomato">#FE6042</color>
+    <color name="bonbon">#FE489D</color>
+    <color name="black">#000000</color>
+</resources>
